@@ -1,4 +1,4 @@
-package com.vaistatapp;
+package com.plastk.travelapp;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
@@ -12,7 +12,7 @@ public class MainActivity extends ReactActivity {
    */
   @Override
   protected String getMainComponentName() {
-    return "VaistatApp";
+    return "Travel App";
   }
 
   /**
