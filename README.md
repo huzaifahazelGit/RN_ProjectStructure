@@ -15,6 +15,10 @@ This project aims to be a strong foundation for react-native applications. It pr
 
 You can start by cloning this repository and using [react-native-rename](https://github.com/junedomingo/react-native-rename). In the current state of this project, it should give you no issues at all, just run the script, delete your node modules and reinstall them and you should be good to go.
 
+### For change the package Name only you can do as like
+ - install npm install react-native-rename -g 
+ - react-native-rename "MyApp" -b com.mycompany.myapp
+
 Keep in mind that this library can cause trouble if you are renaming a project that uses `Pods` on the iOS side.
 
 After that you should proceed as with any javascript project:
