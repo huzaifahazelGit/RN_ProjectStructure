@@ -33,7 +33,6 @@ export default function Login() {
   };
 
  
-
   return (
     <Wrapper viewStyle={styles.wrapView}>
       <ScrollView style={{ ...GST.MAIN }} keyboardShouldPersistTaps="always">

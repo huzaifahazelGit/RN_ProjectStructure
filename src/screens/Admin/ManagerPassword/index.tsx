@@ -1,19 +1,18 @@
-import React ,{useState} from "react";
-import { RF } from "@theme";
-import useStyles from "./style";
-import { GenericNavigation, Titles } from "@utils";
-import { navigate } from "@services";
-import { View, ScrollView } from "react-native";
-import { useTheme } from "@react-navigation/native";
-import { AppHeader, AppTextInput, Wrapper, PrimaryButton } from "@components";
+import React, {useState} from 'react';
+import {RF} from '@theme';
+import useStyles from './style';
+import {GenericNavigation, Titles} from '@utils';
+import {navigate} from '@services';
+import {View, ScrollView} from 'react-native';
+import {useTheme} from '@react-navigation/native';
+import {AppHeader, AppTextInput, Wrapper, PrimaryButton} from '@components';
 
 interface Props extends GenericNavigation {}
 
 export default function ManagerPassword(props: Props) {
   const myTheme: any = useTheme();
   const style = useStyles(myTheme.colors);
-  const [errorText, setErrorText] = useState("")
-
+  const [errorText, setErrorText] = useState('');
 
   return (
     <>
@@ -23,34 +22,33 @@ export default function ManagerPassword(props: Props) {
           <ScrollView showsVerticalScrollIndicator={false}>
             <AppTextInput
               placeholder={Titles.PASSWORD}
-              title={"Enter Current Password"}
-              textStyle={{ marginBottom: RF(30) }}
-              style={{ marginLeft: RF(30) }}
+              title={'Enter Current Password'}
+              textStyle={{marginBottom: RF(30)}}
+              style={{marginLeft: RF(30)}}
             />
             <AppTextInput
               viewStyle={{}}
-              title={"Enter New Password"}
+              title={'Enter New Password'}
               placeholder={Titles.PASSWORD}
-              textStyle={{ marginBottom: RF(30) }}
-              style={{ marginLeft: RF(30) }}
+              textStyle={{marginBottom: RF(30)}}
+              style={{marginLeft: RF(30)}}
             />
             <AppTextInput
-              title={"Re-enter New Password"}
+              title={'Re-enter New Password'}
               placeholder={Titles.PASSWORD}
-              style={{ marginLeft: RF(30) }}
+              style={{marginLeft: RF(30)}}
             />
             <View
               style={{
                 height: RF(160),
                 paddingBottom: 5,
-                justifyContent: "flex-end",
-              }}
-            >
+                justifyContent: 'flex-end',
+              }}>
               <PrimaryButton
-                title={"Next"}
+                title={'Next'}
                 bgColor={myTheme?.colors?.text}
-                onPress={() => navigate("Login")}
-                buttonStyle={{ alignSelf: "center" }}
+                onPress={() => navigate('Login')}
+                buttonStyle={{alignSelf: 'center'}}
               />
             </View>
           </ScrollView>
